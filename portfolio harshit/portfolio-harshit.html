@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="port.css">
+     <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>"
+</head>
+<body>
+    <div id=" header"></div>
+       <div class=" container">
+          <nav>
+            <img src="harshitlogo.png" class="logo" >
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="header-text">
+            <p>apsring mind</p>
+            <h1>Hi,I'm <span>Harshit</span> Kumar Sharma<br> </h1>
+          </div>
+    </div>
+   <!-----------about------------------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src=" harshit.png "  >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="Sub-Title">About Me</h1>
+                    <p>hi am harshit from bihar 
+                        i have completed my schooloing from New Delhi
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('project')">Project</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Student</span><br>CSE </li>
+                            <li><span>web development</span><br>Web Desinging Interfaces</li>
+                            <li><span>Reseacher Electronics</span><br>VLSI(Desinging)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>10th Class</span><br>Kendriya vidhalayala (New Delhi)85%</li>
+                            <li><span>12th Class(pcm)</span><br>Kendriya vidhalayala (New Delhi) 92%</li>
+                            <li><span>currently in first year</span><br> CSE,LPU(Punjab)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="project">
+                        <ul>
+                            <li><span>2023</span><br>Ardino Snake game </li>
+                            <li><span>2023</span><br>ISRO Geo-Data Sharing and Cyber</li>
+                            <li><span>2023</span><br>Free Code-Camp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="Sub-Title">My services</h1>
+            <div class="services-list">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!---------contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane-top"></i>harshit369sharma2005@gamil.com</p>
+                    <p><i class="fa-duotone fa-phone"></i>9441988146</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook fa-beat"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square fa-beat"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin fa-beat"></i></a>
+                    </div>
+                    <a href="harshit cv.good.pdf" download class="btn  btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required >
+                        <input type="email" name="email" placeholder="Your E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your-Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Harshit.Made portfolio.com</p>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementByClassName("tab-links");
+    var tabcontents = document.getElementByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classlist.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
